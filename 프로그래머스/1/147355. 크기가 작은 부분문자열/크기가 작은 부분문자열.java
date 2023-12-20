@@ -1,15 +1,13 @@
 class Solution {
     public int solution(String t, String p) {
         int answer = 0;
-        long number = Long.parseLong(p);
 
-        for (int i = 0; i <t.length()-p.length()+1; i++) {
-            long cutNumber = Long.parseLong(t.substring(i, i + p.length()));
-            if (cutNumber <= number) {
+        for (int i = 0; i < t.length() - p.length() + 1; i++) {
+            String cutNum = t.substring(i, p.length()+i);
+            if (Long.parseLong(cutNum) <= Long.parseLong(p)) {
                 answer++;
             }
         }
-
         return answer;
     }
 }
