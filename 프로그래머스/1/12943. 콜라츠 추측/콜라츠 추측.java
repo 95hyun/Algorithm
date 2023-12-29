@@ -12,7 +12,7 @@ class Solution {
             } else {
                 num = num * 3 + 1;
                 count++;
-            }
+            } 
         }
         return count;
     }
