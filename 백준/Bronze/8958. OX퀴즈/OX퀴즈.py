@@ -1,10 +1,11 @@
 t = int(input())
 
-answer = 0
-count = 0
+
 
 for i in range(t) :
     word = input().strip()
+    answer = 0
+    count = 0
     for j in range(len(word)) :
         if word[j] == "O" :
             count += 1
@@ -12,6 +13,4 @@ for i in range(t) :
         else :
             count = 0
     print(answer)
-    count = 0
-    answer = 0
     
